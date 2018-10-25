@@ -8,12 +8,12 @@ body {
 }
 
 .header {
-    padding: 120px 0 100px 0;
+    padding: 130px 0 100px 0;
     border-bottom: 1px solid #cecdce;
 }
 
 .header__title {
-    font-family: Arial;
+    font-family: "Arial", serif;
     font-size: 50px;
     font-weight: normal;
     text-transform: uppercase;
@@ -22,11 +22,11 @@ body {
 }
 
 .header__subtitle {
-    font-family: Arial;
+    font-family: "Arial", serif;
     font-size: 27px;
     font-weight: normal;
     color: #434244;
-    margin: 15px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .contacts {
@@ -38,7 +38,7 @@ body {
 .contacts__item {
     display: inline-block;
     margin-right: 10px;
-    font-family: Arial;
+    font-family: "Arial", serif;
     font-size: 17px;
 }
 
@@ -93,6 +93,10 @@ body {
     max-width: 630px;
 }
 
+.experience__content {
+    padding: 0;
+}
+
 .personal-info__text {
     margin: 0;
     font-family: "Arial", serif;
@@ -123,6 +127,11 @@ body {
     margin-top: 5px;
 }
 
+.experience__position-info_link {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
 .experience-info__text {
     margin-top: 25px;
     font-family: "Arial", serif;
@@ -130,8 +139,7 @@ body {
     color: #8c8c8c;
     letter-spacing: 1px;
     line-height: 1.7;
-
-    margin-bottom: 60px;                        /*norm?*/
+    margin-bottom: 60px;
 }
 
 .footer {
