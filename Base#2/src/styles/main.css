@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Hind";
+    src: url("../fonts/Hind-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Hind";
+    src: url("../fonts/Hind-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Hind";
+    url("../fonts/Hind-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+
+body {
+    width: 1200px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.post {
+    width: 360px;
+    height: 555px;
+    border: 1px solid #000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.post_icon {
+    z-index:10;
+    position: absolute;
+    top:230px;
+    left: 160px;
+}
+
+.post_main_info-tag,
+.post_main_info-date,
+.post_footer_info-comments,
+.post_main_button-readMore {
+    color: #999999;
+    font-family: "Hind", sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post_main_info-tag {
+    font-weight: 500;
+    margin-top: 55px;
+    letter-spacing: 2px;
+}
+
+.post_main_info-title {
+    color: #212121;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.post_main_info-date {
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.post_main_button {
+    text-align: center;
+}
+
+.post_main_button-readMore {
+    padding-top:5px;
+    font-weight: 500;
+    letter-spacing: 2.75px;
+    margin: 30px auto 0 auto;
+    position:relative;
+
+    border:none;
+    background: linear-gradient(#d6d6d6,#d6d6d6) bottom/ 30% 1px no-repeat,
+    linear-gradient(#d6d6d6,#d6d6d6) top/ 30% 1px no-repeat;
+}
+
+.post_main_button-readMore:hover {
+    padding-top:5px;
+    font-weight: 500;
+    letter-spacing: 2.75px;
+    margin: 30px auto 0 auto;
+    position:relative;
+    color: #d67900;
+
+    border:none;
+    background: linear-gradient(#d67900,#d67900) bottom/ 30% 1px no-repeat,
+    linear-gradient(#d67900,#d67900) top/ 30% 1px no-repeat;
+}
+
+/*##################################
+How made top and bottom with :before?
+##################################*/
+
+/*.post_main_button-readMore:before {*/
+    /*content:'';*/
+    /*width: 30%;*/
+    /*height: 1px;*/
+    /*background:gray;*/
+    /*position:absolute;*/
+    /*!*bottom: -1px;*!*/
+    /*border-top: 1px #f00;*/
+    /*left: 35%;*/
+/*}*/
+
+.post_footer {
+    margin-top: 60px;
+    background: url(../images/comment_icon.png) no-repeat 30px;
+}
+
+.post_footer_info-comments {
+    text-align: unset;
+    margin: 0 0 0 55px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
