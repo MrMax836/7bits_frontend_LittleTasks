@@ -3,16 +3,15 @@ body {
     padding: 0;
 }
 .main {
+    font-family: "Roboto", sans-serif;
     display: block;
-
 }
 
 .main_layout-title {
     margin: 0;
-    padding: 25px 45px;
+    padding: 15px 60px 15px 45px;
     background-color: #e8c734;
     display: inline-block;
-    font-family: "Arial", serif;
     font-weight: bold;
     font-size: 42px;
 }
@@ -27,6 +26,7 @@ body {
 
 .main_layout-list-item-title {
     font-size: 31px;
+    font-weight: normal;
 }
 
 .main_layout-list-item-progress {
@@ -45,14 +45,12 @@ body {
     left: 0;
     bottom: 0;
     background: #bfc0c1;
+}
+
+.seventy:after {
     width: 70%;
 }
 
-
-/*.main_layout-list-item-progress:after .seventy {*/
-    /*width: 70%;*/
-/*}*/
-
-/*.main_layout-list-item-progress:after .ninety {*/
-    /*width: 90%;*/
-/*}*/
+.ninety:after {
+    width: 90%;
+}
