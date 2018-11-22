@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base#3</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <main>
+        <form class="main__reg-form" action="signUp" method="POST" >
+            <section class="main__reg-form_header">
+                <h3 class="main__reg-form_title">Давайте начнём!</h3>
+            </section>
+            <section class="main__reg-form_fields">
+                <p>
+                    <label class="main__reg-form_fields label_text new-line" for="first_name">Имя</label>
+                    <label><input tabindex="1" id="first_name" type="text" name="first_name" placeholder="Чендлер"></label>
+                </p>
+                <p>
+                    <label class="main__reg-form_fields label_text" for="second_name">Фамилия</label>
+                    <input id="second_name" tabindex="2" type="text" name="second_name" placeholder="Бинг">
+                </p>
+                <p>
+                    <label class="main__reg-form_fields label_text new-line">Ваш пол</label>
+                    <label class="check-gender">
+                        <input type="radio" name="gender-type" checked>Женский
+                        <input type="radio" name="gender-type">Мужской
+                    </label>
+                </p>
+                <p>
+                    <label class="main__reg-form_fields label_text" for="email">Введите электронный адрес</label>
+                    <label><input tabindex="3" id="email" type="email" placeholder="email@gmail.com"></label>
+                </p>
+                <p>
+                    <label class="main__reg-form_fields label_text" for="password">Придумайте пароль</label>
+                    <input tabindex="4" id="password" type="password" placeholder="******">
+                </p>
+                <p>
+                    <label class="privacy">
+                        <input tabindex="5" type="checkbox">Я принимаю условия <a class="link" href="#">Пользовательского соглашения</a>
+                        и даю своё согласие на обработку моих персональных данных
+                        на условиях, определенных <a class="link" href="#">Политикой конфиденциальности</a>.
+                    </label>
+                </p>
+                <p>
+                    <input tabindex="6" type="submit" value="Зарегистрироваться">
+                </p>
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>

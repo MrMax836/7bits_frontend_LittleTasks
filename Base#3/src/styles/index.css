@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "PT sans";
+    src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    font-family: "PT sans", sans-serif;
+    font-size: 14px;
+    color: #262e73;
+}
+
+.main__reg-form{
+    width: 425px;
+    height: 770px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.main__reg-form input,
+.main__reg-form label {
+    display: inline-block;
+}
+
+.main__reg-form input[type=text],
+.main__reg-form input[type=email],
+.main__reg-form input[type=password] {
+    font-size: 17px;
+    color: #b2bccb;
+    width: 350px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.main__reg-form input:focus {
+    color: #282828;
+}
+
+.main__reg-form input ,
+.main__reg-form .check-gender {
+    font-size: 17px;
+}
+.main__reg-form .check-gender {
+    color: #282828;
+    /*padding-right: 20px;*/
+}
+
+.main__reg-form_title {
+    padding-top: 60px;
+    margin: 0;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.main__reg-form_fields {
+    font-weight: normal;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.main__reg-form_fields .label_text {
+    margin: 5px 0 0 0;
+}
+
+.new-line {
+    min-width: 400px;                        /* HACK  Иначе не получалось сделать, чтобы label "Имя" был отдельной строкой*/
+}
+
+.main__reg-form_fields .privacy {
+    color: #5b626e;
+}
+
+.main__reg-form_fields .link {
+    color: #2e3678;
+    text-decoration:none;
+}
+
+.main__reg-form input[type=submit] {
+    background: #0bc691;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    width: 370px;
+    height: 40px;
+}
+
+.main__reg-form .privacy {
+    font-size: 12px;
+}
