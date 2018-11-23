@@ -22,9 +22,13 @@
                 </p>
                 <p>
                     <label class="main__reg-form_fields label_text new-line">Ваш пол</label>
-                    <label class="check-gender">
-                        <input type="radio" name="gender-type" checked>Женский
-                        <input type="radio" name="gender-type">Мужской
+                    <label class="main__reg-form_fields_check-gender">
+                        <label class="main__reg-form_fields_check-gender-item">
+                            <input type="radio" name="gender-type"><span></span>Женский
+                        </label>
+                        <label>
+                            <input type="radio" name="gender-type" checked><span></span>Мужской
+                        </label>
                     </label>
                 </p>
                 <p>
@@ -36,10 +40,12 @@
                     <input tabindex="4" id="password" type="password" placeholder="******">
                 </p>
                 <p>
-                    <label class="privacy">
-                        <input tabindex="5" type="checkbox">Я принимаю условия <a class="link" href="#">Пользовательского соглашения</a>
+                    <label class="main__reg-form_fields_privacy">
+                        <input id="privacy_checkbox" tabindex="5" type="checkbox">
+                        <label for="privacy_checkbox"><span class="custom-checkbox"></span></label>
+                        <span>Я принимаю условия <a class="link" href="#">Пользовательского соглашения</a>
                         и даю своё согласие на обработку моих персональных данных
-                        на условиях, определенных <a class="link" href="#">Политикой конфиденциальности</a>.
+                            на условиях, определенных <a class="link" href="#">Политикой конфиденциальности</a>.</span>
                     </label>
                 </p>
                 <p>
