@@ -37,7 +37,7 @@ gulp.task('images', function() {
 
 // Build project        Whether to add 'build-clean'
 gulp.task('default', ['html', 'css']);
-
+git
 gulp.task('watch', function() {
     gulp.watch(path.html, ['html']);
     gulp.watch(path.css, ['css']);
