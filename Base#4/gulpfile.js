@@ -6,44 +6,39 @@
 /##################################*/
 
 
-// Global variables
+// includes
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var runSequence = require('run-sequence').use(gulp);
 var del = require('del');
 
+var path = {
+    css: './src/styles/*.css',
+    html: './src/templates/*.html',
+    build: {
+        root: './build',
+        css: './build/styles',
+        html: './build'
+    }
+};
 
 // Concat and copy *.styles files to build directory
 gulp.task('concat-copy-to-build:styles', function() {
-    return gulp.src('./src/styles/*.css')
+    return gulp.src(path.css)
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./build/styles'))
+        .pipe(gulp.dest(path.build.css))
 });
-
 
 // Copy .html file to build directory
 gulp.task('copy-to-build:html', function() {
-    return gulp.src('./src/templates/*.html')
-        .pipe(gulp.dest('./build'))
+    return gulp.src(path.html)
+        .pipe(gulp.dest(path.build.html))
 });
-
 
 // Clean /build directory
-gulp.task('build-clean', function() {
-    return del(['./build']);
+gulp.task('clean', function() {
+    return del([path.build.root]);
 });
 
-
-// Build project    - ?
-gulp.task('build', function(callback) {
-    runSequence(
-        // 'build-clean',
-        'concat-copy-to-build:styles',
-        'copy-to-build:html',
-        callback
-    );
-});
-
-
-//  need change .gitignore   !!!
-//  only node_modules?
+// Build project        Whether to add 'build-clean'
+gulp.task('default', ['copy-to-build:html', 'concat-copy-to-build:styles']);
