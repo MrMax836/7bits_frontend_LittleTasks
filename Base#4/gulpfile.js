@@ -10,6 +10,8 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var del = require('del');
+var runSequence = require('run-sequence');
+
 
 var path = {
     css: './src/styles/*.css',
@@ -39,5 +41,10 @@ gulp.task('clean', function() {
     return del([path.build.root]);
 });
 
-// Build project        Whether to add 'build-clean'
-gulp.task('default', ['copy-to-build:html', 'concat-copy-to-build:styles']);
+// Build project
+gulp.task('default', function(callback) {
+    runSequence('clean',
+        ['copy-to-build:html', 'concat-copy-to-build:styles'],
+        callback);
+});
+
