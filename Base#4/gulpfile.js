@@ -9,7 +9,6 @@
 // includes
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var runSequence = require('run-sequence').use(gulp);
 var del = require('del');
 
 var path = {
